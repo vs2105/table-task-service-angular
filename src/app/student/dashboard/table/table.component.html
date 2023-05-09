@@ -1,0 +1,29 @@
+ <table class=" table table-bordered">
+   <thead>
+    <tr>
+        <th>Sr.No</th>
+        <th>Fname</th>
+        <th>Lname</th>
+        <th>Age</th>
+        <th>Contact</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr *ngFor="let std of stdArray ; index as i">
+        <td>{{i+1}}</td>
+        <td>{{std.fname}}</td>
+        <td>{{std.lname}}</td>
+        <td>{{std.age}}</td>
+        <td>{{std.contact}}</td>
+        <!-- <td><button class="btn btn-primary">Edit</button></td> -->
+      <td><button mat-raised-button color="primary">Edit</button></td>  
+        
+        <!-- <td><button class="btn btn-danger" (click)="onDeleteStudent(std.id)">Delete</button></td> -->
+       <td><button mat-raised-button color="warn" (click)="onDeleteStudent(std.id,std.fname)">Delete</button></td>
+    </tr>
+   </tbody>
+   
+ </table>
+   

@@ -1,0 +1,19 @@
+  <div class="form-group">
+      <label for="fname">First name*</label>
+      <input type="text" #fname class="form-control" id="">
+
+      <label for="lname">Last name*</label>
+      <input type="text"  #lname class="form-control" id="">
+
+      <label for="age">Age</label>
+      <input type="number" #age class="form-control" id="">
+
+      <label for="contact">Contact</label>
+      <input type="number" #contact class="form-control" id="">
+
+      <div class="text-right my-4">
+        <!-- <button class="btn btn-primary" (click)="onAddStudent(fname,lname,age,contact)"> Add Student</button> -->
+        <button class="mb-4" mat-raised-button color="primary"(click)="onAddStudent(fname,lname,age,contact)">Add student</button>
+      </div>
+
+  </div>
